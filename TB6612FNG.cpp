@@ -1,5 +1,6 @@
 #include "TB6612FNG.h"
 #include <driver/ledc.h>
+#include <algorithm>
 
 // TB6612FNG has maximum PWM switching frequency of 100kHz.
 #define DEFAULT_LEDC_FREQ 20000
@@ -16,7 +17,7 @@ void Tb6612fngLedc::begin() {
 }
 
 void Tb6612fngLedc::write(float value) {
-  const auto v = max(0.0, min(1.0, value));
+  const auto v = std::max(0.0f, std::min(1.0f, value));
   ledcWrite(chan, v * rangeMax);
 }
 
