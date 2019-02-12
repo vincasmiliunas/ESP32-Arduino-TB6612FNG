@@ -1,0 +1,15 @@
+
+{
+    "name": "TB6612FNG",
+    "keywords": "TB6612FNG, MOTOR, MOTOR DRIVER, ESP32 ARDUINO MOTOR DRIVER",
+    "description": "ESP32 Arduino library for controlling motors using TB6612FNG motor driver.",
+    "homepage": "https://github.com/vincasmiliunas/ESP32-Arduino-TB6612FNG/wiki",
+    "repository":
+    {
+      "type": "git",
+      "url": "https://github.com/vincasmiliunas/ESP32-Arduino-TB6612FNG"
+    },
+    "version": "1.0.1",
+    "frameworks": "arduino",
+    "platforms": "ESP32"
+  }
