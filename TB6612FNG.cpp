@@ -1,5 +1,6 @@
 #include "TB6612FNG.h"
 #include <driver/ledc.h>
+#include <cmath>
 #include <algorithm>
 
 // TB6612FNG has maximum PWM switching frequency of 100kHz.
@@ -36,7 +37,7 @@ void Tb6612fngMotor::begin() {
 
 void Tb6612fngMotor::drive(float velocity) {
   direct(velocity >= 0, velocity <= 0);
-  ledc.write(abs(velocity));
+  ledc.write(std::abs(velocity));
 }
 
 void Tb6612fngMotor::brake() { direct(true, true); }
