@@ -9,7 +9,7 @@
       "type": "git",
       "url": "https://github.com/vincasmiliunas/ESP32-Arduino-TB6612FNG.git"
     },
-    "version": "1.0.1",
+    "version": "1.0.2",
     "frameworks": "arduino",
     "platforms": "*"
   }
